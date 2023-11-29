@@ -1,0 +1,144 @@
+html,
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    
+    transition: all 0.3s ease-in-out;
+}
+.header{
+    font-family: 'Roboto', sans-serif;
+}
+.bi:hover,
+.nav-link:hover 
+{
+    color: red !important;
+}
+  
+.nav-icon{
+    gap: 20px;
+    cursor: pointer;
+}
+.header-bottom{
+    top: 66px;
+}
+.header-bottom-content{
+    top: 0 !important;
+}
+.navbar-brand{
+    width: 160px !important;
+}
+.buttons-button-1{
+    font-size: 15px !important;
+}
+.buttons-button-2{
+    font-size: 14px !important;
+}
+.buttons-button-1,
+.buttons-button-2{
+    padding: 5px !important;
+}
+.promotions:hover{
+    transform: scale(1.05);
+}
+.electric-buttons-button-1{
+    padding: 2px !important;
+}
+.youtube-videos div iframe{
+    height: 300px;
+    width: 90%;
+}
+/* Reset */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: hsl(0deg, 0%, 10%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Slider code */
+.css-slider {
+  --per-page: 1;
+  --gap: .5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-inline: var(--gap);
+  
+  @media (width >= 425px) {
+    --per-page: 2;
+  }
+  
+  @media (width >= 768px) {
+    --per-page: 3;
+  }
+
+  & input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  & .css-track {
+    flex-grow: 1;
+    display: flex;
+    margin-block: var(--gap);
+    margin-inline: calc(var(--gap) / -2);
+    overflow: hidden;
+  }
+
+  & .css-slide {
+    flex-basis: calc((100% / var(--per-page)) - var(--gap));
+    flex-shrink: 0;
+    margin: calc(var(--gap) / 2);
+    display: flex;
+    overflow: hidden;
+    min-width: 0;
+    flex-direction: column;
+    transition: 0.2s ease-out;
+    padding: var(--gap);
+    border-radius: var(--gap);
+    opacity: 1;
+  }
+
+  .css-controls {
+    padding: 0;
+    margin: calc(var(--gap) / -4) calc(var(--gap) / -4) calc(var(--gap) / 2);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  & label {
+    margin: 0.5rem;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    text-indent: -9999px;
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.5;
+  }
+}
+.css-controls label{
+    background-color: rgb(41, 41, 41) ;
+}
+.remove-scrolling { 
+  height: 100%; 
+  overflow: hidden; 
+} 
